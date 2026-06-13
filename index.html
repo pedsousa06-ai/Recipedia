@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/src/style/testimonials.css">
     <link rel="stylesheet" href="/src/style/newsletter.css">
     <link rel="stylesheet" href="/src/style/footer.css">
-    <script src="js/main.js"></script>
+    <script src="/src/js/main.js"></script>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="assets/logo.svg" alt="Recipedia" class="logo-img">
+                    <img src="/src/assets/images/logo.svg" alt="Recipedia" class="logo-img">
                     <span class="logo-text">Recipedia</span>
                 </div>
 
@@ -39,7 +39,7 @@
 
                 <div class="header-actions">
                     <button class="btn-search" aria-label="Buscar">
-                        <img src="assets/search.svg" alt="Buscar">
+                        <img src="/src/assets/images/search.svg" alt="Buscar">
                     </button>
                     <button class="btn-menu-mobile" aria-label="Menu">☰</button>
                 </div>
@@ -86,7 +86,34 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- RECIPES SECTION -->
+    <section id="recipes" class="recipes">
+        <div class="container">
+            <span class="section-eyebrow">🍽️ Receitas em Destaque</span>
+            <h2 class="section-title">Pratos que você vai amar</h2>
+            <p class="section-subtitle">
+                Selecionamos as receitas mais amadas pela nossa comunidade
+            </p>
+
+            <div class="recipes-filters">
+                <button class="filter-btn active" data-category="all">Todas</button>
+                <button class="filter-btn" data-category="breakfast">Café da Manhã</button>
+                <button class="filter-btn" data-category="lunch">Almoço</button>
+                <button class="filter-btn" data-category="dinner">Jantar</button>
+                <button class="filter-btn" data-category="dessert">Sobremesa</button>
+            </div>
+
+            <div class="recipes-grid" id="recipesGrid">
+                <!-- Recipes will be inserted via JS -->
+            </div>
+
+            <div class="recipes-footer">
+                <button class="btn-load-more">Carregar mais receitas</button>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
