@@ -75,29 +75,3 @@
 }
 
 /* Mobile Header */
-@media (max-width: 768px) {
-    .nav {
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 100%;
-        height: calc(100vh - 70px);
-        background: var(--white);
-        transition: left 0.3s ease;
-        z-index: 999;
-    }
-    
-    .nav.active {
-        left: 0;
-    }
-    
-    .nav-list {
-        flex-direction: column;
-        padding: var(--spacing-xl);
-        gap: var(--spacing-lg);
-    }
-    
-    .btn-menu-mobile {
-        display: block;
-    }
-}
