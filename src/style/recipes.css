@@ -189,25 +189,3 @@
     color: var(--white);
 }
 
-/* Responsive Recipes */
-@media (max-width: 968px) {
-    .recipes-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: var(--spacing-lg);
-    }
-}
-
-@media (max-width: 576px) {
-    .recipes-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .recipes-filters {
-        gap: var(--spacing-sm);
-    }
-    
-    .filter-btn {
-        padding: 6px 12px;
-        font-size: var(--small);
-    }
-}
